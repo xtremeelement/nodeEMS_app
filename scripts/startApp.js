@@ -25,31 +25,34 @@ module.exports = function startApp() {
         methodChoices[7]
       ]
     })
-    .then(method => {
-      switch (method) {
-        case method.name == methodChoices[0]:
+    .then(res => {
+      switch (res.method) {
+        case methodChoices[0]:
           require("./viewEmployees")();
           break;
-        case method.name == methodChoices[1]:
+        case methodChoices[1]:
           require("./viewEmployeesDept")();
           break;
-        case method.name == methodChoices[2]:
+        case methodChoices[2]:
           require("./viewDepts")();
           break;
-        case method.name == methodChoices[3]:
+        case methodChoices[3]:
           require("./addEmp")();
           break;
-        case method.name == methodChoices[4]:
+        case methodChoices[4]:
           require("./updtEmp")();
           break;
-        case method.name == methodChoices[5]:
+        case methodChoices[5]:
           require("./delEmp")();
           break;
-        case method.name == methodChoices[6]:
+        case methodChoices[6]:
           require("./addDept")();
           break;
-        case method.name == methodChoices[7]:
+        case methodChoices[7]:
           require("./exitApp")();
+          break;
+        default:
+          console.log("Broken");
           break;
       }
     });

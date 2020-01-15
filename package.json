@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/xtremeelement/nodeEMS_app#readme",
   "dependencies": {
+    "console-table": "^0.1.2",
     "express": "^4.17.1",
+    "inquirer": "^7.0.3",
     "mysql": "^2.17.1"
   }
 }
