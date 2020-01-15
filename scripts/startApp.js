@@ -1,11 +1,11 @@
 const inquirer = require("inquirer");
 let methodChoices = [
   "View Employees",
-  "View Employees by Dept",
+  "View Employees by Dept (not working)",
   "View Depts",
-  "Add Employee",
-  "Update Employee",
-  "Delete Employee",
+  "Add Employee (not working)",
+  "Update Employee (not working)",
+  "Delete Employee (not working)",
   "Add Dept",
   "Exit"
 ];
@@ -18,6 +18,7 @@ module.exports = function startApp() {
       choices: [
         methodChoices[0],
         methodChoices[1],
+        methodChoices[2],
         methodChoices[3],
         methodChoices[4],
         methodChoices[5],
