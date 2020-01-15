@@ -5,7 +5,7 @@ let methodChoices = [
   "View Depts",
   "Add Employee (not working)",
   "Update Employee (not working)",
-  "Delete Employee (not working)",
+  "Delete Employee",
   "Add Dept",
   "Exit"
 ];
@@ -15,16 +15,7 @@ module.exports = function startApp() {
       type: "list",
       name: "method",
       message: "Please select an option",
-      choices: [
-        methodChoices[0],
-        methodChoices[1],
-        methodChoices[2],
-        methodChoices[3],
-        methodChoices[4],
-        methodChoices[5],
-        methodChoices[6],
-        methodChoices[7]
-      ]
+      choices: methodChoices
     })
     .then(res => {
       switch (res.method) {
